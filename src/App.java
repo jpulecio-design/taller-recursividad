@@ -4,7 +4,7 @@ public class App {
 
     static Random random = new Random();
 
-    // ── Generadores de datos random visibles ─────────────────
+    // Generadores de datos random visibles
 
     static int generarEnteroEntre(int minimo, int maximo) {
         return random.nextInt(maximo - minimo + 1) + minimo;
@@ -18,8 +18,7 @@ public class App {
         return arreglo;
     }
 
-
-    // ── Impresión ─────────────────────────────────────────────
+    // Impresion
 
     static void imprimirTitulo(String titulo) {
         System.out.println("\n═══════════════════════════════════════════");
@@ -33,25 +32,28 @@ public class App {
 
     static void imprimirArreglo(String etiqueta, int[] arreglo) {
         System.out.print("  " + etiqueta + ": [ ");
-        for (int elemento : arreglo) System.out.print(elemento + " ");
+        for (int elemento : arreglo)
+            System.out.print(elemento + " ");
         System.out.println("]");
     }
 
-    
-
-    // ── Main ──────────────────────────────────────────────────
-
     public static void main(String[] args) throws Exception {
 
-        imprimirTitulo("TALLER DE RECURSIVIDAD - UNIMAYOR");
+        imprimirTitulo("TALLER DE RECURSIVIDAD ");
 
-        // ── Ej 1: Factorial ───────────────────────────────────
+        // Ej 1: Factorial
         imprimirSeccion("1", "Factorial");
         int numero1 = generarEnteroEntre(1, 10);
         long resultadoFactorial = RecursividadNumerica.calcularFactorial(numero1);
         System.out.println("  Número generado : " + numero1);
         System.out.println("  " + numero1 + "!           : " + resultadoFactorial);
 
-        
+        // ── Ej 2: Invertir numero ─────────────────────────────
+        imprimirSeccion("2", "Invertir número");
+        int numero2 = generarEnteroEntre(100, 9999);
+        String resultadoInvertido = RecursividadDigitos.invertirNumero(numero2);
+        System.out.println("  Número generado : " + numero2);
+        System.out.println("  Invertido       : " + resultadoInvertido);
+
     }
 }
