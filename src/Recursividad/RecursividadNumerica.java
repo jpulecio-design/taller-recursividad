@@ -8,4 +8,13 @@ public class RecursividadNumerica {
         return numero * calcularFactorial(numero - 1);
 
     }
+
+    // Ej 3 - Sumatoria 1 + 1/2 + ... + 1/n O(n)
+    // Caso base: n == 1 → 1.0
+    public static double calcularSumatoriaFracciones(int n) {
+        boolean esCasoBase = (n == 1);
+        if (esCasoBase)
+            return 1.0;
+        return (1.0 / n) + calcularSumatoriaFracciones(n - 1);
+    }
 }

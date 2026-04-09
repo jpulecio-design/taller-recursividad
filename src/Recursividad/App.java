@@ -45,15 +45,20 @@ public class App {
         imprimirSeccion("1", "Factorial");
         int numero1 = generarEnteroEntre(1, 10);
         long resultadoFactorial = RecursividadNumerica.calcularFactorial(numero1);
-        System.out.println("  Número generado : " + numero1);
+        System.out.println("  Numero generado : " + numero1);
         System.out.println("  " + numero1 + "!           : " + resultadoFactorial);
 
-        // ── Ej 2: Invertir numero ─────────────────────────────
-        imprimirSeccion("2", "Invertir número");
+        // Ej 2: Invertir numero
+        imprimirSeccion("2", "Invertir numero");
         int numero2 = generarEnteroEntre(100, 9999);
         String resultadoInvertido = RecursividadDigitos.invertirNumero(numero2);
         System.out.println("  Número generado : " + numero2);
         System.out.println("  Invertido       : " + resultadoInvertido);
-
+        // ── Ej 3: Sumatoria 1 + 1/2 + ... + 1/n
+        imprimirSeccion("3", "Sumatoria 1 + 1/2 + ... + 1/n");
+        int numero3 = generarEnteroEntre(2, 10);
+        double resultadoFracciones = RecursividadNumerica.calcularSumatoriaFracciones(numero3);
+        System.out.println("  n generado      : " + numero3);
+        System.out.printf("  Sumatoria       : %.4f%n", resultadoFracciones);
     }
 }
