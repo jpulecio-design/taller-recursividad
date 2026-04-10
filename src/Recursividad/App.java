@@ -1,3 +1,5 @@
+package Recursividad;
+
 import java.util.Random;
 
 public class App {
@@ -54,7 +56,7 @@ public class App {
         String resultadoInvertido = RecursividadDigitos.invertirNumero(numero2);
         System.out.println("  Número generado : " + numero2);
         System.out.println("  Invertido       : " + resultadoInvertido);
-        // ── Ej 3: Sumatoria 1 + 1/2 + ... + 1/n
+        // 3: Sumatoria 1 + 1/2 + ... + 1/n
         imprimirSeccion("3", "Sumatoria 1 + 1/2 + ... + 1/n");
         int numero3 = generarEnteroEntre(2, 10);
         double resultadoFracciones = RecursividadNumerica.calcularSumatoriaFracciones(numero3);

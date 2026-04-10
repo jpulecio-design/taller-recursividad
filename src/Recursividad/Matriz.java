@@ -1,3 +1,4 @@
+package Recursividad;
 public class Matriz {
 
     private final int[][] datos;
