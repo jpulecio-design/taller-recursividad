@@ -29,7 +29,7 @@ public class App {
     }
 
     static void imprimirSeccion(String numero, String descripcion) {
-        System.out.println("\n[" + numero + "] " + descripcion );
+        System.out.println("\n[" + numero + "] " + descripcion);
     }
 
     static void imprimirArreglo(String etiqueta, int[] arreglo) {
@@ -75,7 +75,7 @@ public class App {
         int resultadoSumatoria = RecursividadNumerica.calcularSumatoria(numero5);
         System.out.println("  n generado      : " + numero5);
         System.out.println("  Sumatoria       : " + resultadoSumatoria);
-        // Ej 6: Potencia 
+        // Ej 6: Potencia
         imprimirSeccion("6", "Potencia base^exponente");
         int base6 = generarEnteroEntre(2, 9);
         int exponente6 = generarEnteroEntre(1, 6);
@@ -83,6 +83,14 @@ public class App {
         System.out.println("  Base generada   : " + base6);
         System.out.println("  Exponente       : " + exponente6);
         System.out.println("  " + base6 + "^" + exponente6 + "             : " + resultadoPotencia);
+        // Ej 7: MCD 
+        imprimirSeccion("7", "Maximo Común Divisor (Euclides)");
+        int m7 = generarEnteroEntre(10, 100);
+        int n7 = generarEnteroEntre(1, 50);
+        int resultadoMcd = RecursividadMatematica.calcularMcd(m7, n7);
+        System.out.println("  M generado      : " + m7);
+        System.out.println("  N generado      : " + n7);
+        System.out.println("  MCD(" + m7 + ", " + n7 + ")  : " + resultadoMcd);
     }
 
 }
