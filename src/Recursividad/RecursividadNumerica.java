@@ -28,4 +28,14 @@ public class RecursividadNumerica {
             return 1;
         return n + calcularSumatoria(n - 1);
     }
+
+    // Ej 6 - Potencia base^exponente O(exponente)
+    // Caso base: exponente == 0 → 1
+    public static double calcularPotencia(double base, int exponente) {
+        boolean esCasoBase = (exponente == 0);
+        if (esCasoBase)
+            return 1;
+        return base * calcularPotencia(base, exponente - 1);
+    }
+
 }

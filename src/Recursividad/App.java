@@ -29,7 +29,7 @@ public class App {
     }
 
     static void imprimirSeccion(String numero, String descripcion) {
-        System.out.println("\n── [" + numero + "] " + descripcion + " ──");
+        System.out.println("\n[" + numero + "] " + descripcion );
     }
 
     static void imprimirArreglo(String etiqueta, int[] arreglo) {
@@ -69,12 +69,20 @@ public class App {
         System.out.println("  Numero generado : " + numero4);
         System.out.println("  Suma de digitos : " + resultadoSumaDigitos);
 
-        // Ej 5: Sumatoria hasta n 
+        // Ej 5: Sumatoria hasta n
         imprimirSeccion("5", "Sumatoria 1 + 2 + ... + n");
         int numero5 = generarEnteroEntre(1, 15);
         int resultadoSumatoria = RecursividadNumerica.calcularSumatoria(numero5);
         System.out.println("  n generado      : " + numero5);
         System.out.println("  Sumatoria       : " + resultadoSumatoria);
+        // Ej 6: Potencia 
+        imprimirSeccion("6", "Potencia base^exponente");
+        int base6 = generarEnteroEntre(2, 9);
+        int exponente6 = generarEnteroEntre(1, 6);
+        double resultadoPotencia = RecursividadNumerica.calcularPotencia(base6, exponente6);
+        System.out.println("  Base generada   : " + base6);
+        System.out.println("  Exponente       : " + exponente6);
+        System.out.println("  " + base6 + "^" + exponente6 + "             : " + resultadoPotencia);
     }
 
 }
