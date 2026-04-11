@@ -84,13 +84,20 @@ public class App {
         System.out.println("  Exponente       : " + exponente6);
         System.out.println("  " + base6 + "^" + exponente6 + "             : " + resultadoPotencia);
         // Ej 7: MCD 
-        imprimirSeccion("7", "Maximo Común Divisor (Euclides)");
+        imprimirSeccion("7", "Maximo Comun Divisor (Euclides)");
         int m7 = generarEnteroEntre(10, 100);
         int n7 = generarEnteroEntre(1, 50);
         int resultadoMcd = RecursividadMatematica.calcularMcd(m7, n7);
         System.out.println("  M generado      : " + m7);
         System.out.println("  N generado      : " + n7);
         System.out.println("  MCD(" + m7 + ", " + n7 + ")  : " + resultadoMcd);
+        // Ej 8: Copiar cadena 
+        imprimirSeccion("8", "Copiar cadena");
+        String[] palabras       = {"recursividad", "unimayor", "java", "estructuras"};
+        String cadenaOriginal   = palabras[generarEnteroEntre(0, palabras.length - 1)];
+        String copiaDeCadena    = RecursividadCadenas.copiarCadena(cadenaOriginal);
+        System.out.println("  Cadena original : " + cadenaOriginal);
+        System.out.println("  Copia           : " + copiaDeCadena);
     }
 
 }
