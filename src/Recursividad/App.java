@@ -83,7 +83,7 @@ public class App {
         System.out.println("  Base generada   : " + base6);
         System.out.println("  Exponente       : " + exponente6);
         System.out.println("  " + base6 + "^" + exponente6 + "             : " + resultadoPotencia);
-        // Ej 7: MCD 
+        // Ej 7: MCD
         imprimirSeccion("7", "Maximo Comun Divisor (Euclides)");
         int m7 = generarEnteroEntre(10, 100);
         int n7 = generarEnteroEntre(1, 50);
@@ -91,13 +91,21 @@ public class App {
         System.out.println("  M generado      : " + m7);
         System.out.println("  N generado      : " + n7);
         System.out.println("  MCD(" + m7 + ", " + n7 + ")  : " + resultadoMcd);
-        // Ej 8: Copiar cadena 
+        // Ej 8: Copiar cadena
         imprimirSeccion("8", "Copiar cadena");
-        String[] palabras       = {"recursividad", "unimayor", "java", "estructuras"};
-        String cadenaOriginal   = palabras[generarEnteroEntre(0, palabras.length - 1)];
-        String copiaDeCadena    = RecursividadCadenas.copiarCadena(cadenaOriginal);
+        String[] palabras = { "recursividad", "unimayor", "java", "estructuras" };
+        String cadenaOriginal = palabras[generarEnteroEntre(0, palabras.length - 1)];
+        String copiaDeCadena = RecursividadCadenas.copiarCadena(cadenaOriginal);
         System.out.println("  Cadena original : " + cadenaOriginal);
         System.out.println("  Copia           : " + copiaDeCadena);
+        // Ej 9: Cociente 
+        imprimirSeccion("9", "Cociente de división entera ");
+        int dividendo9 = generarEnteroEntre(20, 100);
+        int divisor9 = generarEnteroEntre(2, 10);
+        int resultadoCociente = RecursividadNumerica.calcularCociente(dividendo9, divisor9);
+        System.out.println("  Dividendo       : " + dividendo9);
+        System.out.println("  Divisor         : " + divisor9);
+        System.out.println("  Cociente        : " + resultadoCociente);
     }
 
 }

@@ -38,4 +38,12 @@ public class RecursividadNumerica {
         return base * calcularPotencia(base, exponente - 1);
     }
 
+    // Ej 9 - Cociente por restas sucesivas O(n)
+    // Caso base: dividendo < divisor equivale a 0
+    public static int calcularCociente(int dividendo, int divisor) {
+        boolean esCasoBase = (dividendo < divisor);
+        if (esCasoBase)
+            return 0;
+        return 1 + calcularCociente(dividendo - divisor, divisor);
+    }
 }
