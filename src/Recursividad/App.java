@@ -56,11 +56,25 @@ public class App {
         String resultadoInvertido = RecursividadDigitos.invertirNumero(numero2);
         System.out.println("  Número generado : " + numero2);
         System.out.println("  Invertido       : " + resultadoInvertido);
-        // 3: Sumatoria 1 + 1/2 + ... + 1/n
+        // Ej 3: Sumatoria 1 + 1/2 + ... + 1/n
         imprimirSeccion("3", "Sumatoria 1 + 1/2 + ... + 1/n");
         int numero3 = generarEnteroEntre(2, 10);
         double resultadoFracciones = RecursividadNumerica.calcularSumatoriaFracciones(numero3);
         System.out.println("  n generado      : " + numero3);
         System.out.printf("  Sumatoria       : %.4f%n", resultadoFracciones);
+        // Ej 4: Suma de digitos
+        imprimirSeccion("4", "Suma de digitos");
+        int numero4 = generarEnteroEntre(100, 9999);
+        int resultadoSumaDigitos = RecursividadDigitos.sumarDigitos(numero4);
+        System.out.println("  Numero generado : " + numero4);
+        System.out.println("  Suma de digitos : " + resultadoSumaDigitos);
+
+        // Ej 5: Sumatoria hasta n 
+        imprimirSeccion("5", "Sumatoria 1 + 2 + ... + n");
+        int numero5 = generarEnteroEntre(1, 15);
+        int resultadoSumatoria = RecursividadNumerica.calcularSumatoria(numero5);
+        System.out.println("  n generado      : " + numero5);
+        System.out.println("  Sumatoria       : " + resultadoSumatoria);
     }
+
 }
