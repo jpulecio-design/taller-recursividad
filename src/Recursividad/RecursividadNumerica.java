@@ -46,4 +46,13 @@ public class RecursividadNumerica {
             return 0;
         return 1 + calcularCociente(dividendo - divisor, divisor);
     }
+
+    // Ej 10 - Multiplicación por sumas sucesivas O(n)
+    // Caso base: segundoNumero == 0 → 0
+    public static int calcularMultiplicacion(int primerNumero, int segundoNumero) {
+        boolean esCasoBase = (segundoNumero == 0);
+        if (esCasoBase)
+            return 0;
+        return primerNumero + calcularMultiplicacion(primerNumero, segundoNumero - 1);
+    }
 }

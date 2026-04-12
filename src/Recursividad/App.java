@@ -99,13 +99,21 @@ public class App {
         System.out.println("  Cadena original : " + cadenaOriginal);
         System.out.println("  Copia           : " + copiaDeCadena);
         // Ej 9: Cociente 
-        imprimirSeccion("9", "Cociente de división entera ");
+        imprimirSeccion("9", "Cociente de division entera ");
         int dividendo9 = generarEnteroEntre(20, 100);
         int divisor9 = generarEnteroEntre(2, 10);
         int resultadoCociente = RecursividadNumerica.calcularCociente(dividendo9, divisor9);
         System.out.println("  Dividendo       : " + dividendo9);
         System.out.println("  Divisor         : " + divisor9);
         System.out.println("  Cociente        : " + resultadoCociente);
+        // Ej 10: Multiplicacion
+        imprimirSeccion("10", "Multiplicacion por sumas sucesivas");
+        int primerNumero10  = generarEnteroEntre(2, 15);
+        int segundoNumero10 = generarEnteroEntre(2, 10);
+        int resultadoMultiplicacion = RecursividadNumerica.calcularMultiplicacion(primerNumero10, segundoNumero10);
+        System.out.println("  Primer número   : " + primerNumero10);
+        System.out.println("  Segundo número  : " + segundoNumero10);
+        System.out.println("  Resultado       : " + resultadoMultiplicacion);
     }
 
 }
