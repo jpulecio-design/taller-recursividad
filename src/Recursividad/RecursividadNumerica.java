@@ -55,4 +55,5 @@ public class RecursividadNumerica {
             return 0;
         return primerNumero + calcularMultiplicacion(primerNumero, segundoNumero - 1);
     }
+    
 }

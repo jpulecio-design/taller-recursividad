@@ -19,7 +19,15 @@ public class App {
         }
         return arreglo;
     }
-
+    static Matriz generarMatrizRandom(int filas, int columnas, int minimo, int maximo) {
+        Matriz matriz = new Matriz(filas, columnas);
+        for (int i = 0; i < filas; i++) {
+            for (int j = 0; j < columnas; j++) {
+                matriz.asignarElemento(i, j, generarEnteroEntre(minimo, maximo));
+            }
+        }
+        return matriz;
+    }
     // Impresion
 
     static void imprimirTitulo(String titulo) {
@@ -37,6 +45,17 @@ public class App {
         for (int elemento : arreglo)
             System.out.print(elemento + " ");
         System.out.println("]");
+    }
+
+    static void imprimirMatriz(String etiqueta, Matriz matriz) {
+        System.out.println("  " + etiqueta + ":");
+        for (int i = 0; i < matriz.obtenerFilas(); i++) {
+            System.out.print("    ");
+            for (int j = 0; j < matriz.obtenerColumnas(); j++) {
+                System.out.printf("%5d", matriz.obtenerElemento(i, j));
+            }
+            System.out.println();
+        }
     }
 
     public static void main(String[] args) throws Exception {
@@ -114,12 +133,18 @@ public class App {
         System.out.println("  Primer número   : " + primerNumero10);
         System.out.println("  Segundo número  : " + segundoNumero10);
         System.out.println("  Resultado       : " + resultadoMultiplicacion);
-        // Ej 11: Suma de arreglo  
+        // Ej 11: Suma de arreglo
         imprimirSeccion("11", "Suma de elementos de un arreglo");
         int[] arreglo11 = generarArregloRandom(6, 1, 20);
         int resultadoSumaArreglo = RecursividadEstructuras.sumarElementosArreglo(arreglo11, 0);
         imprimirArreglo("Arreglo generado", arreglo11);
         System.out.println("  Suma total      : " + resultadoSumaArreglo);
+        // Ej 12: Suma de matriz 
+        imprimirSeccion("12", "Suma de elementos de una matriz");
+        Matriz matriz12 = generarMatrizRandom(3, 4, 1, 15);
+        int resultadoSumaMatriz = RecursividadEstructuras.sumarElementosMatriz(matriz12, 0, 0);
+        imprimirMatriz("Matriz generada (3x4)", matriz12);
+        System.out.println("  Suma total      : " + resultadoSumaMatriz);
     }
 
 }
