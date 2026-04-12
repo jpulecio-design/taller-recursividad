@@ -3,7 +3,7 @@ package Recursividad;
 public class RecursividadCadenas {
 
     // Ej 8 - Copiar cadena O(n) n=longitud
-    // Caso base: cadena vacía → ""
+    // Caso base: cadena vacia → ""
     public static String copiarCadena(String cadenaOriginal) {
         boolean esCasoBase = cadenaOriginal.isEmpty();
         if (esCasoBase)

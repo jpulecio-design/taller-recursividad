@@ -30,7 +30,7 @@ public class RecursividadNumerica {
     }
 
     // Ej 6 - Potencia base^exponente O(exponente)
-    // Caso base: exponente == 0 → 1
+    // Caso base: exponente == 0 pasa a 1
     public static double calcularPotencia(double base, int exponente) {
         boolean esCasoBase = (exponente == 0);
         if (esCasoBase)
