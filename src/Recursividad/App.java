@@ -19,6 +19,7 @@ public class App {
         }
         return arreglo;
     }
+
     static Matriz generarMatrizRandom(int filas, int columnas, int minimo, int maximo) {
         Matriz matriz = new Matriz(filas, columnas);
         for (int i = 0; i < filas; i++) {
@@ -139,12 +140,28 @@ public class App {
         int resultadoSumaArreglo = RecursividadEstructuras.sumarElementosArreglo(arreglo11, 0);
         imprimirArreglo("Arreglo generado", arreglo11);
         System.out.println("  Suma total      : " + resultadoSumaArreglo);
-        // Ej 12: Suma de matriz 
+        // Ej 12: Suma de matriz
         imprimirSeccion("12", "Suma de elementos de una matriz");
         Matriz matriz12 = generarMatrizRandom(3, 4, 1, 15);
         int resultadoSumaMatriz = RecursividadEstructuras.sumarElementosMatriz(matriz12, 0, 0);
         imprimirMatriz("Matriz generada (3x4)", matriz12);
         System.out.println("  Suma total      : " + resultadoSumaMatriz);
+        // Ej 13: Fibonacci
+        imprimirSeccion("13", "Serie de Fibonacci");
+        int limite13 = generarEnteroEntre(6, 12);
+        System.out.println("  Límite generado : " + limite13);
+        System.out.print("  Serie           : ");
+        for (int i = 0; i <= limite13; i++) {
+            System.out.print(RecursividadMatematica.calcularFibonacci(i) + " ");
+        }
+        // Ej 14: Ackermann 
+        imprimirSeccion("14", "Funcion de Ackermann");
+        int m14 = generarEnteroEntre(0, 3);
+        int n14 = generarEnteroEntre(0, 4);
+        int resultadoAckermann = RecursividadMatematica.calcularAckermann(m14, n14);
+        System.out.println("  m generado      : " + m14);
+        System.out.println("  n generado      : " + n14);
+        System.out.println("  Ackermann(" + m14 + "," + n14 + ")  : " + resultadoAckermann);
     }
 
 }
