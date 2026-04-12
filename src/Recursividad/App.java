@@ -98,7 +98,7 @@ public class App {
         String copiaDeCadena = RecursividadCadenas.copiarCadena(cadenaOriginal);
         System.out.println("  Cadena original : " + cadenaOriginal);
         System.out.println("  Copia           : " + copiaDeCadena);
-        // Ej 9: Cociente 
+        // Ej 9: Cociente
         imprimirSeccion("9", "Cociente de division entera ");
         int dividendo9 = generarEnteroEntre(20, 100);
         int divisor9 = generarEnteroEntre(2, 10);
@@ -108,12 +108,18 @@ public class App {
         System.out.println("  Cociente        : " + resultadoCociente);
         // Ej 10: Multiplicacion
         imprimirSeccion("10", "Multiplicacion por sumas sucesivas");
-        int primerNumero10  = generarEnteroEntre(2, 15);
+        int primerNumero10 = generarEnteroEntre(2, 15);
         int segundoNumero10 = generarEnteroEntre(2, 10);
         int resultadoMultiplicacion = RecursividadNumerica.calcularMultiplicacion(primerNumero10, segundoNumero10);
         System.out.println("  Primer número   : " + primerNumero10);
         System.out.println("  Segundo número  : " + segundoNumero10);
         System.out.println("  Resultado       : " + resultadoMultiplicacion);
+        // Ej 11: Suma de arreglo  
+        imprimirSeccion("11", "Suma de elementos de un arreglo");
+        int[] arreglo11 = generarArregloRandom(6, 1, 20);
+        int resultadoSumaArreglo = RecursividadEstructuras.sumarElementosArreglo(arreglo11, 0);
+        imprimirArreglo("Arreglo generado", arreglo11);
+        System.out.println("  Suma total      : " + resultadoSumaArreglo);
     }
 
 }
