@@ -1,7 +1,7 @@
 package Recursividad;
 
 public class RecursividadDigitos {
-    // Ej 2 - Invertir numero O(n) n=digitos
+    // Ej 2 - Invertir numero
     // O(log n)
 
     public static String invertirNumero(int numero) {
@@ -11,7 +11,7 @@ public class RecursividadDigitos {
         return ultimoDigito + invertirNumero(numero / 10);
     }
 
-    // Ej 4 - Suma de digitos O(n) n=digitos
+    // Ej 4 - Suma de digitos 
     // O(log n)
 
     public static int sumarDigitos(int numero) {
