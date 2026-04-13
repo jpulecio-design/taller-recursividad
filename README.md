@@ -1,7 +1,16 @@
 # Taller de Recursividad 
 
-**Estudiante:** Juan Andres Pulecio Delgado
-**Asignatura:** Estructura de Datos
+---
+
+## Estudiante
+
+Juan Andres Pulecio Delgado
+
+---
+
+## Asignatura
+
+Estructura de datos
 
 ---
 
