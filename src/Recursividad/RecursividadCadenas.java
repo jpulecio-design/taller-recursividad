@@ -4,7 +4,7 @@ public class RecursividadCadenas {
 
     // Ej 8 - Copiar cadena
     // Complejidad: O(n) donde n=longitud
-    // Caso base: cadena vacia -> ""
+
     public static String copiarCadena(String cadenaOriginal) {
         if (cadenaOriginal.isEmpty())
             return "";
