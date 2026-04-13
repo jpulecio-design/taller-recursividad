@@ -1,4 +1,4 @@
-package Recursividad;   
+package Recursividad;
 
 import java.util.Random;
 
@@ -6,7 +6,7 @@ public class EjercicioEjecutable {
 
     private static final Random random = new Random();
 
-    // Generadores 
+    // Generadores
 
     private static int generarEnteroEntre(int minimo, int maximo) {
         return random.nextInt(maximo - minimo + 1) + minimo;
@@ -30,7 +30,7 @@ public class EjercicioEjecutable {
         return matriz;
     }
 
-    // Ejercicios 
+    // Ejercicios
 
     public static void ejecutarEjercicio1() {
         Consola.imprimirSeccion("1", "Factorial");
