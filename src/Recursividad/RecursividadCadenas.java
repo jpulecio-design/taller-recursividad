@@ -2,11 +2,11 @@ package Recursividad;
 
 public class RecursividadCadenas {
 
-    // Ej 8 - Copiar cadena O(n) n=longitud
-    // Caso base: cadena vacia → ""
+    // Ej 8 - Copiar cadena
+    // Complejidad: O(n) donde n=longitud
+    // Caso base: cadena vacia -> ""
     public static String copiarCadena(String cadenaOriginal) {
-        boolean esCasoBase = cadenaOriginal.isEmpty();
-        if (esCasoBase)
+        if (cadenaOriginal.isEmpty())
             return "";
         char primerCaracter = cadenaOriginal.charAt(0);
         String restoDeCadena = cadenaOriginal.substring(1);
