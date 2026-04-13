@@ -17,7 +17,7 @@ de cada resultado.
 ---
 
 ## Estructura del repositorio
-
+```
 Taller-Recursividad/
 ├── src/
 │   └── Recursividad/
@@ -31,7 +31,7 @@ Taller-Recursividad/
 │       ├── RecursividadMatematica.java
 │       └── RecursividadEstructuras.java
 └── README.md
-
+```
 ---
 
 ## Ejercicios
