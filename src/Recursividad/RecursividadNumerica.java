@@ -1,7 +1,7 @@
 package Recursividad;
 
 public class RecursividadNumerica {
-    // Ej 1 Factorial O(n)
+    // Ej 1 Factorial 
     // Complejidad: O(n)
 
     public static long calcularFactorial(int numero) {
@@ -10,7 +10,7 @@ public class RecursividadNumerica {
         return numero * calcularFactorial(numero - 1);
     }
 
-    // Ej 3 - Sumatoria 1 + 1/2 + ... + 1/n O(n)
+    // Ej 3 - Sumatoria 1 + 1/2 + ... + 1/n 
     // Complejidad: O(n)
 
     public static double calcularSumatoriaFracciones(int n) {
@@ -19,7 +19,7 @@ public class RecursividadNumerica {
         return (1.0 / n) + calcularSumatoriaFracciones(n - 1);
     }
 
-    // Ej 5 - Sumatoria 1 + 2 + ... + n O(n)
+    // Ej 5 - Sumatoria 1 + 2 + ... + n 
     // Complejidad: O(n)
 
     public static int calcularSumatoria(int n) {
@@ -46,7 +46,7 @@ public class RecursividadNumerica {
         return 1 + calcularCociente(dividendo - divisor, divisor);
     }
 
-    // Ej 10 - Multiplicación por sumas sucesivas
+    // Ej 10 - Multiplicacion por sumas sucesivas
     // Complejidad: O(n)
 
     public static int calcularMultiplicacion(int primerNumero, int segundoNumero) {
